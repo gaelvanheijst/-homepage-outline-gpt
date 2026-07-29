@@ -1,0 +1,540 @@
+/* ==========================================================================
+   The Homepage Outline GPT — sales page
+   Plain CSS, no build step. Mirrors the Tailwind-style spec in prose.
+   ========================================================================== */
+
+:root {
+  --color-bg: #ffffff;
+  --color-cream: #fcfbf7;
+  --color-text: #1a1b1f;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-800: #1f2937;
+  --color-light-gray-bg: #f8f8f8;
+  --color-black: #000000;
+  --color-yellow: #ffd300;
+  --color-lavender: #dde1ff;
+  --content-max-width: 720px;
+  --section-padding-y: 80px; /* py-20 */
+  --paragraph-gap: 24px; /* mb-6 */
+  --font-heading: Bitter, Georgia, serif;
+  --font-body: Bitter, Georgia, serif;
+  --font-ui: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-quote: Caveat, cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bg-yellow {
+  background: var(--color-yellow);
+}
+
+.bg-cream {
+  background: var(--color-cream);
+}
+
+.bg-gray {
+  background: var(--color-light-gray-bg);
+}
+
+.bg-black {
+  background: var(--color-black);
+  color: #ffffff;
+}
+
+.bg-black .section-label {
+  background: #ffffff;
+  color: var(--color-text);
+}
+
+.bg-black .trust-line,
+.bg-black .product-desc {
+  color: #b7b7b7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+p {
+  margin: 0 0 var(--paragraph-gap) 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section label, e.g. "how it started" — styled as a lavender eyebrow pill */
+.section-label {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.875rem; /* text-sm */
+  color: var(--color-text);
+  background: var(--color-lavender);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 16px; /* mb-4 */
+  font-weight: 500;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 var(--paragraph-gap) 0;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  margin: 0 0 var(--paragraph-gap) 0;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* md:text-5xl */
+  }
+  h2 {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
+}
+
+.body-text {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.625; /* leading-relaxed */
+}
+
+blockquote {
+  font-family: var(--font-quote);
+  font-size: 1.75rem;
+  font-style: normal;
+  line-height: 1.3;
+  border-left: none;
+  padding-left: 0;
+  margin: 24px 0;
+  text-align: center;
+}
+
+/* CTA buttons — fully rounded pill, yellow fill by default */
+.cta-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  padding: 16px 32px; /* py-4 px-8 */
+  border-radius: 999px;
+  font-family: var(--font-ui);
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.cta-button:hover {
+  background: #e6bd00;
+}
+
+/* White pill variant — used on yellow backgrounds (e.g. the hero) */
+.cta-button--white {
+  background: #ffffff;
+  color: var(--color-black);
+}
+
+.cta-button--white:hover {
+  background: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .cta-button {
+    width: auto;
+    display: inline-block;
+  }
+}
+
+.cta-wrap {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.trust-line {
+  font-size: 0.875rem; /* text-sm */
+  color: var(--color-gray-500);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ---- Hero ---- */
+.hero {
+  text-align: center;
+  padding-top: 64px;
+}
+
+.hero .brand {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 32px;
+}
+
+.hero .subheadline {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: var(--color-text);
+  margin-bottom: 32px;
+}
+
+/* ---- Ticker / marquee ---- */
+.ticker {
+  background: var(--color-light-gray-bg);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 16px 0;
+}
+
+.ticker-track {
+  display: inline-block;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker-track span {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  padding: 0 12px;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---- Stats bar ---- */
+.stats-bar {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+}
+
+.stat-label {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+  margin-top: 4px;
+}
+
+/* ---- Pain points list ---- */
+.pain-list {
+  padding-left: 20px;
+  margin: 0 0 var(--paragraph-gap) 0;
+}
+
+.pain-list li {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  margin-bottom: 12px;
+}
+
+/* ---- How it works steps ---- */
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step {
+  text-align: center;
+}
+
+.step .step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.step h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.step p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* ---- Product preview card ---- */
+.preview-card {
+  background: var(--color-cream);
+  border: 1px solid var(--color-black);
+  border-radius: 20px;
+  padding: 32px;
+  margin: 32px 0;
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.preview-card .preview-meta {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.preview-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin: 24px 0 8px 0;
+}
+
+.preview-card p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* Sections table */
+.sections-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+  font-size: 0.9375rem;
+}
+
+.sections-table th,
+.sections-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.sections-table th {
+  color: var(--color-gray-500);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Bonuses ---- */
+.bonus {
+  border: 1px solid var(--color-black);
+  border-radius: 20px;
+  background: var(--color-cream);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+
+.bonus h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+/* ---- Testimonials ---- */
+.testimonial-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.testimonial-grid blockquote {
+  margin: 0;
+}
+
+/* ---- Founder bio ---- */
+.founder-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-black);
+  margin: 0 auto 24px auto;
+  background: #ffffff;
+}
+
+.founder-title {
+  font-family: var(--font-ui);
+  color: var(--color-gray-500);
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.founder-list {
+  padding-left: 20px;
+}
+
+.founder-list li {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  margin-bottom: 12px;
+}
+
+/* ---- FAQ accordion ---- */
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 20px 0;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+
+.faq-answer p {
+  font-size: 1.0625rem;
+  line-height: 1.625;
+  padding-bottom: 20px;
+  color: var(--color-gray-800);
+}
+
+.faq-item.open .faq-answer {
+  max-height: 400px;
+}
+
+/* ---- Checkout section ---- */
+.checkout-box {
+  background: var(--color-cream);
+  border: 1px solid var(--color-black);
+  border-radius: 20px;
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.checkout-box .product-name {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.checkout-box .product-desc {
+  font-family: var(--font-ui);
+  color: var(--color-gray-500);
+  margin-bottom: 24px;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: var(--color-yellow);
+  padding: 48px 0;
+  text-align: center;
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+}
+
+/* ---- Simple pages (success / cancel) ---- */
+.simple-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.simple-page .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
