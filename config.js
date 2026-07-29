@@ -5,4 +5,4 @@
 //    (Stripe Payment Links redirect on their own, so success.html mainly
 //    matters if you link people there directly, e.g. from an email).
 // 3. Paste the resulting URL below.
-const STRIPE_PAYMENT_LINK_URL = "https://buy.stripe.com/REPLACE_WITH_YOUR_LINK";
+const STRIPE_PAYMENT_LINK_URL = "https://buy.stripe.com/fZuaEX4er1Dy2TP4VqbV604";
