@@ -528,6 +528,31 @@ blockquote {
   line-height: 1.6;
 }
 
+.full-output-blur-wrap {
+  position: relative;
+  margin-top: 24px;
+}
+
+.full-output-blur {
+  filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.full-output-unlock {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  background: rgba(252, 251, 247, 0.6);
+}
+
 /* Sections table */
 .sections-table {
   width: 100%;
