@@ -419,6 +419,13 @@ blockquote {
   margin: 0;
 }
 
+.reviews-image {
+  width: 100%;
+  border: 1px solid var(--color-black);
+  border-radius: 20px;
+  margin-top: 32px;
+}
+
 /* ---- Founder bio ---- */
 .founder-photo {
   width: 120px;
