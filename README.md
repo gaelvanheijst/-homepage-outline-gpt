@@ -17,7 +17,7 @@ images/         Founder photo, testimonial screenshots
 ## Before going live
 
 1. **Create a Stripe Payment Link**
-   Stripe Dashboard → Payment Links → New → one-time payment, $9.00 USD, product "The Homepage Outline GPT".
+   Stripe Dashboard → Payment Links → New → one-time payment, $49.00 USD, product "Homepage Positioning Workshop".
    Set the after-payment redirect to your deployed `/success.html` URL.
 
 2. **Paste the link into `config.js`**
