@@ -1,8 +1,7 @@
-// Central place for the Stripe Payment Link.
-// 1. In your Stripe Dashboard: Payment Links -> New -> create a $9.00 USD,
-//    one-time payment link for "The Homepage Outline GPT".
-// 2. Set the Payment Link's after-payment redirect to your /success.html URL
-//    (Stripe Payment Links redirect on their own, so success.html mainly
-//    matters if you link people there directly, e.g. from an email).
-// 3. Paste the resulting URL below.
+// Stripe Payment Link for the $9 Homepage Positioning Workshop.
+// Stripe Dashboard -> Payment Links. Product name there should match
+// "Homepage Positioning Workshop" to stay consistent with this page.
 const STRIPE_PAYMENT_LINK_URL = "https://buy.stripe.com/fZuaEX4er1Dy2TP4VqbV604";
+
+// Booking link for the $249 Homepage Strategy Session (TidyCal).
+const STRATEGY_SESSION_BOOKING_URL = "https://tidycal.com/gaelvanheijst/strategy-session";

@@ -16,7 +16,12 @@ document.querySelectorAll(".faq-item").forEach((item) => {
   });
 });
 
-// Wire every CTA button to the Stripe Payment Link (see config.js)
+// Wire every $9 Workshop CTA to the Stripe Payment Link (see config.js)
 document.querySelectorAll("[data-checkout-button]").forEach((button) => {
   button.setAttribute("href", STRIPE_PAYMENT_LINK_URL);
+});
+
+// Wire every Strategy Session CTA to the booking link (see config.js)
+document.querySelectorAll("[data-booking-button]").forEach((button) => {
+  button.setAttribute("href", STRATEGY_SESSION_BOOKING_URL);
 });
