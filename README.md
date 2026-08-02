@@ -1,4 +1,4 @@
-# The Homepage Outline GPT — Sales Page
+# Homepage Fix Kit — Sales Page
 
 Static site (plain HTML/CSS/JS, no build step). No Node.js or npm required to run or deploy.
 
@@ -17,7 +17,7 @@ images/         Founder photo, testimonial screenshots
 ## Before going live
 
 1. **Create a Stripe Payment Link**
-   Stripe Dashboard → Payment Links → New → one-time payment, $49.00 USD, product "Homepage Positioning Workshop".
+   Stripe Dashboard → Payment Links → New → one-time payment, $49.00 USD, product "Homepage Fix Kit".
    Set the after-payment redirect to your deployed `/success.html` URL.
 
 2. **Paste the link into `config.js`**

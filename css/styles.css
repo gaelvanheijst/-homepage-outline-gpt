@@ -1,5 +1,5 @@
 /* ==========================================================================
-   The Homepage Outline GPT — sales page
+   Homepage Fix Kit — sales page
    Plain CSS, no build step. Mirrors the Tailwind-style spec in prose.
    ========================================================================== */
 
@@ -463,7 +463,7 @@ blockquote {
   line-height: 1.55;
 }
 
-/* ---- Workshop Pack deliverable list ---- */
+/* ---- Fix Kit deliverable list ---- */
 .pack-item {
   border: 1px solid var(--color-black);
   border-radius: 20px;
