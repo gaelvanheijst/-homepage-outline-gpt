@@ -1,0 +1,56 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="20" width="860" height="660" rx="24" fill="#fcfbf7" stroke="#000000" stroke-width="2"/>
+
+  <!-- header -->
+  <circle cx="62" cy="58" r="20" fill="#ffd300" stroke="#000000" stroke-width="2"/>
+  <path d="M 54 58 L 70 58 M 62 50 L 62 66 M 56 52 L 68 64 M 68 52 L 56 64" stroke="#000000" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="94" y="54" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#1a1b1f">Homepage Fix Kit</text>
+  <text x="94" y="75" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6b7280" letter-spacing="0.3">GPT-powered workshop</text>
+  <line x1="40" y1="96" x2="840" y2="96" stroke="#000000" stroke-width="1" opacity="0.15"/>
+
+  <!-- user bubble -->
+  <rect x="340" y="116" width="500" height="88" rx="18" fill="#dde1ff" stroke="#000000" stroke-width="1.5"/>
+  <text x="366" y="148" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1a1b1f">I'm a brand designer for eco-friendly fashion</text>
+  <text x="366" y="172" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1a1b1f">brands. I want a homepage serious buyers trust.</text>
+
+  <!-- assistant bubble -->
+  <rect x="60" y="220" width="440" height="72" rx="18" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="86" y="252" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="16" fill="#1a1b1f">Got it. Here's your Homepage Blueprint:</text>
+  <text x="86" y="274" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6b7280">Let's start with your positioning.</text>
+
+  <!-- blueprint card -->
+  <rect x="60" y="316" width="780" height="300" rx="20" fill="#fcfbf7" stroke="#000000" stroke-width="2"/>
+  <text x="88" y="352" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="1.2" fill="#6b7280">HOMEPAGE BLUEPRINT</text>
+  <text x="88" y="384" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="24" fill="#1a1b1f">Your Positioning</text>
+  <line x1="88" y1="396" x2="220" y2="396" stroke="#ffd300" stroke-width="4"/>
+
+  <!-- row 1 -->
+  <circle cx="98" cy="432" r="6" fill="#ffd300" stroke="#000000" stroke-width="1.2"/>
+  <text x="118" y="437" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="15" fill="#1a1b1f">Audience</text>
+  <text x="230" y="437" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1b1f">Eco-conscious fashion founders</text>
+
+  <!-- row 2 -->
+  <circle cx="98" cy="472" r="6" fill="#ffd300" stroke="#000000" stroke-width="1.2"/>
+  <text x="118" y="477" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="15" fill="#1a1b1f">Problem</text>
+  <text x="230" y="477" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1b1f">Beautiful mission, invisible on the homepage</text>
+
+  <!-- row 3 -->
+  <circle cx="98" cy="512" r="6" fill="#ffd300" stroke="#000000" stroke-width="1.2"/>
+  <text x="118" y="517" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="15" fill="#1a1b1f">Hero direction</text>
+  <text x="260" y="517" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1b1f">Lead with the transformation, not the title</text>
+
+  <!-- row 4 -->
+  <circle cx="98" cy="552" r="6" fill="#ffd300" stroke="#000000" stroke-width="1.2"/>
+  <text x="118" y="557" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="15" fill="#1a1b1f">Next step</text>
+  <text x="230" y="557" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1b1f">A few more questions to complete your Kit</text>
+
+  <rect x="88" y="580" width="182" height="14" rx="7" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <rect x="88" y="580" width="130" height="14" rx="7" fill="#ffd300" stroke="#000000" stroke-width="1"/>
+  <text x="282" y="592" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6b7280">Blueprint 70% complete</text>
+
+  <!-- input bar -->
+  <rect x="60" y="636" width="780" height="42" rx="21" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="88" y="662" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#9ca3af">Message the Fix Kit...</text>
+  <circle cx="800" cy="657" r="17" fill="#000000"/>
+  <path d="M 800 665 L 800 649 M 793 656 L 800 649 L 807 656" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
