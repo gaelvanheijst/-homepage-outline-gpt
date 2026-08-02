@@ -25,3 +25,8 @@ document.querySelectorAll("[data-checkout-button]").forEach((button) => {
 document.querySelectorAll("[data-booking-button]").forEach((button) => {
   button.setAttribute("href", STRATEGY_SESSION_BOOKING_URL);
 });
+
+// Wire the post-payment "open the GPT" button (see config.js)
+document.querySelectorAll("[data-gpt-button]").forEach((button) => {
+  button.setAttribute("href", GPT_LINK_URL);
+});
