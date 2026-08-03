@@ -11,3 +11,12 @@ const STRATEGY_SESSION_BOOKING_URL = "https://tidycal.com/gaelvanheijst/strategy
 
 // The actual Homepage Fix Kit GPT, linked from success.html after payment.
 const GPT_LINK_URL = "https://chatgpt.com/g/g-6a6f0e4854588191a68214d4023cac21-homepage-fix-kit";
+
+// Stripe Payment Link for the $9 Homepage First Aid check.
+// PLACEHOLDER — create this Payment Link in Stripe (one-time, $9.00 USD,
+// product "Homepage First Aid") and paste the real URL here.
+const FIRST_AID_STRIPE_PAYMENT_LINK_URL = "https://buy.stripe.com/REPLACE_WITH_FIRST_AID_LINK";
+
+// The actual Homepage First Aid GPT, linked from first-aid-success.html.
+// PLACEHOLDER — paste the real GPT link here once it's built.
+const FIRST_AID_GPT_LINK_URL = "https://chatgpt.com/g/REPLACE_WITH_FIRST_AID_GPT_LINK";

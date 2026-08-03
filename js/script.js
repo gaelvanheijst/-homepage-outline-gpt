@@ -30,3 +30,13 @@ document.querySelectorAll("[data-booking-button]").forEach((button) => {
 document.querySelectorAll("[data-gpt-button]").forEach((button) => {
   button.setAttribute("href", GPT_LINK_URL);
 });
+
+// Wire every $9 First Aid CTA to its own Stripe Payment Link (see config.js)
+document.querySelectorAll("[data-firstaid-checkout-button]").forEach((button) => {
+  button.setAttribute("href", FIRST_AID_STRIPE_PAYMENT_LINK_URL);
+});
+
+// Wire the First Aid post-payment "open the GPT" button (see config.js)
+document.querySelectorAll("[data-firstaid-gpt-button]").forEach((button) => {
+  button.setAttribute("href", FIRST_AID_GPT_LINK_URL);
+});
