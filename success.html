@@ -13,14 +13,84 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="simple-page">
+
+  <section class="hero bg-yellow" style="padding-top: 64px;">
     <div class="container">
       <h1>You're in. Let's go.</h1>
+      <p class="subheadline">Here's exactly what's waiting for you inside.</p>
+      <div class="cta-wrap">
+        <a href="#" class="cta-button cta-button--white" data-gpt-button target="_blank" rel="noopener">Open the Homepage Fix Kit</a>
+        <p class="trust-line">Takes about 15 minutes · a copy of this link is also on its way to your email</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">what's included</div>
+      <h2>Your Homepage Fix Kit</h2>
       <p class="body-text">
-        Click below to open the Homepage Fix Kit and get started right away.
-        A copy of this link is also on its way to your email, in case you
-        need it later.
+        Answer the strategist's questions and you'll walk away with eight
+        deliverables, built in this order:
       </p>
+
+      <div class="pack-item">
+        <div class="pack-item-number">01</div>
+        <div>
+          <h3>Homepage Header</h3>
+          <p>The foundation: who it's for, their biggest problem, your promise, a suggested headline, and a supporting sentence. Nothing else gets built until this feels right.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">02</div>
+        <div>
+          <h3>Homepage Blueprint</h3>
+          <p>Your homepage, section by section — what belongs, why each section exists, and your top three priorities.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">03</div>
+        <div>
+          <h3>Blueprint Cards</h3>
+          <p>Every section broken down: why it exists, the visitor question it answers, what belongs there, what to avoid, and a coaching note from Gaël.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">04</div>
+        <div>
+          <h3>Homepage Readiness Score</h3>
+          <p>An honest read across positioning, messaging, structure, trust, offer, and CTA — plus your single biggest opportunity.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">05</div>
+        <div>
+          <h3>Writing Prompt Pack</h3>
+          <p>One prompt per section, ready to paste into ChatGPT or Claude once you're happy with the Blueprint. Strategy first, writing second.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">06</div>
+        <div>
+          <h3>Homepage Checklist</h3>
+          <p>Your final review before publishing. If something fails the checklist, it's the thinking that needs fixing — not the wording.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">07</div>
+        <div>
+          <h3>Before &amp; After Example</h3>
+          <p>A realistic example built for your business, showing what changed and why — so you know what "good" looks like.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">08</div>
+        <div>
+          <h3>Action Plan</h3>
+          <p>Three stages — Today, This Week, Next — so you know exactly what to do first, without feeling overwhelmed.</p>
+        </div>
+      </div>
+
       <div class="cta-wrap">
         <a href="#" class="cta-button" data-gpt-button target="_blank" rel="noopener">Open the Homepage Fix Kit</a>
         <p class="trust-line">Takes about 15 minutes</p>
@@ -29,9 +99,18 @@
         <a href="index.html" style="color: inherit;">← Back to homepage</a>
       </p>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Gaël van Heijst. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="config.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
