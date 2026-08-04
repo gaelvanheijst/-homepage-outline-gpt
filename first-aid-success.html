@@ -13,14 +13,86 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="simple-page">
+
+  <section class="hero bg-yellow" style="padding-top: 64px;">
     <div class="container">
       <h1>You're in. Let's go.</h1>
+      <p class="subheadline">Here's exactly what your review will cover.</p>
+      <div class="cta-wrap">
+        <a href="#" class="cta-button cta-button--white" data-firstaid-gpt-button target="_blank" rel="noopener">Open the Homepage First Aid</a>
+        <p class="trust-line">Takes about 10 minutes · a copy of this link is also on its way to your email</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">what's included</div>
+      <h2>Your Homepage First Aid review</h2>
       <p class="body-text">
-        Click below to open the Homepage First Aid check and get started
-        right away. A copy of this link is also on its way to your email,
-        in case you need it later.
+        Paste your homepage URL, copy, or a screenshot. You'll get a review
+        built in this order:
       </p>
+
+      <div class="pack-item">
+        <div class="pack-item-number">01</div>
+        <div>
+          <h3>Overall Homepage Health</h3>
+          <p>A score out of 100, plus a one-sentence read on where your homepage stands right now.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">02</div>
+        <div>
+          <h3>First Impression</h3>
+          <p>Gaël's honest, unfiltered reaction in the first five seconds — exactly what a visitor thinks before they decide to keep scrolling.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">03</div>
+        <div>
+          <h3>Homepage Health Score</h3>
+          <p>A category-by-category breakdown — headline, audience, problem, offer, trust, structure, CTA — with a reason behind every score.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">04</div>
+        <div>
+          <h3>Top 3 Diagnoses</h3>
+          <p>The three biggest problems holding your homepage back: what's wrong, why it matters, and what to do about it.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">05</div>
+        <div>
+          <h3>Quick Wins</h3>
+          <p>Five fast, practical changes that would make the biggest difference — no rewrite required.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">06</div>
+        <div>
+          <h3>Section Notes</h3>
+          <p>A walk-through of your homepage section by section — headline, offer, proof, and more — like notes from a real review.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">07</div>
+        <div>
+          <h3>Biggest Opportunity</h3>
+          <p>If you only changed one thing this week, here's what it should be — and why.</p>
+        </div>
+      </div>
+      <div class="pack-item">
+        <div class="pack-item-number">08</div>
+        <div>
+          <h3>Final Verdict</h3>
+          <p>What's already working, what's holding you back, and what to fix first.</p>
+        </div>
+      </div>
+
+      <p class="trust-line">This is a diagnosis, not a rewrite — Gaël won't touch your copy or design.</p>
+
       <div class="cta-wrap">
         <a href="#" class="cta-button" data-firstaid-gpt-button target="_blank" rel="noopener">Open the Homepage First Aid</a>
         <p class="trust-line">Takes about 10 minutes</p>
@@ -29,9 +101,18 @@
         <a href="first-aid.html" style="color: inherit;">← Back to homepage</a>
       </p>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Gaël van Heijst. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="config.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
