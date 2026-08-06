@@ -18,3 +18,6 @@ const FIRST_AID_STRIPE_PAYMENT_LINK_URL = "https://buy.stripe.com/fZuaEX4er1Dy2T
 // The actual Homepage First Aid GPT, linked from first-aid-success.html.
 // PLACEHOLDER — paste the real GPT link here once it's built.
 const FIRST_AID_GPT_LINK_URL = "https://chatgpt.com/g/REPLACE_WITH_FIRST_AID_GPT_LINK";
+
+// Booking link for the free discovery call (TidyCal), linked from the hub page.
+const DISCOVERY_CALL_BOOKING_URL = "https://tidycal.com/gaelvanheijst/discovery-call";

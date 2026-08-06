@@ -40,3 +40,8 @@ document.querySelectorAll("[data-firstaid-checkout-button]").forEach((button) =>
 document.querySelectorAll("[data-firstaid-gpt-button]").forEach((button) => {
   button.setAttribute("href", FIRST_AID_GPT_LINK_URL);
 });
+
+// Wire every discovery call CTA to the booking link (see config.js)
+document.querySelectorAll("[data-discovery-button]").forEach((button) => {
+  button.setAttribute("href", DISCOVERY_CALL_BOOKING_URL);
+});
