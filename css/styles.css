@@ -427,6 +427,13 @@ blockquote {
   margin-bottom: 12px;
 }
 
+.tile-group-label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 32px 0 12px 0;
+}
+
 /* ---- Blueprint Card sample ---- */
 .card-title {
   font-family: var(--font-heading);
