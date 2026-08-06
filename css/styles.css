@@ -423,25 +423,7 @@ blockquote {
   }
 }
 
-.two-ways-grid .shift-col .section-label {
-  margin-bottom: 12px;
-}
-
-/* ---- Tiles grid (hub page — 3 equal cards) ---- */
-.tiles-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin: 32px 0 0 0;
-}
-
-@media (min-width: 768px) {
-  .tiles-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.tiles-grid .shift-col .section-label {
+.shift-col .section-label {
   margin-bottom: 12px;
 }
 
@@ -453,7 +435,7 @@ blockquote {
   margin: 12px 0 20px 0;
 }
 
-.two-ways-grid .card-title {
+.shift-col .card-title {
   margin: 0 0 8px 0;
 }
 
