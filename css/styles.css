@@ -427,6 +427,38 @@ blockquote {
   margin-bottom: 12px;
 }
 
+/* ---- Two-column photo + text (story sections) ---- */
+.story-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .story-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  /* Photo on the right, text on the left */
+  .story-grid--reverse .story-photo {
+    order: 2;
+  }
+}
+
+.story-photo {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
 .tile-group-label {
   font-family: var(--font-heading);
   font-weight: 700;
